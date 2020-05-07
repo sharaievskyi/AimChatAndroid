@@ -108,24 +108,6 @@ Feature: Toolbar
     And tap on the "Apply edit" button
     Then "Name should start from latin symbol or digit" alert is displayed
 
-#    Создать новую комнату для проверки валидации
-#  Scenario: 5.013 Check the room name validation with only the digits in the "Edit Room" screen.
-#    Given login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When tap on the "Logo" button
-#    Then Left Drawer is opened
-#    Then the "IronMan" room is presented in the left drawer
-#    And tap on the "IronMan" room in the left drawer
-#    Then the "IronMan" room is opened
-#    When tap on the "IronMan" name in the toolbar
-#    Then the "Room settings" screen is opened
-#    When tap on the "Edit room" link
-#    Then the "Edit room" screen is opened
-#    When change room name to "123456789" in the field "Edit room name"
-#    And tap on the "Apply edit" button
-#    Then "Name should begin and contains only latin character" alert is displayed
-
   Scenario: 5.014 Check the room name validation with the empty field in the "Edit Room" screen.
     Given login using the properties file
     Then the user is logged in
@@ -315,36 +297,6 @@ Feature: Toolbar
     And wait while results are refreshed
     Then the "General" room is opened
 
-# $$$$$$$$$$$$$$$$
-#  Scenario: 5.023 Check the "reassign new owner" function.
-#    Given login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When swipe from left to right
-#    Then Left Drawer is opened
-#    When tap on the "Rooms" title
-#    Then the "Browse rooms" screen is opened
-#    Then the "All" tab is selected
-#    And tap on the "Create room" button
-#    Then the "Create room" screen is opened
-#    And enter "Batman" in the "Create room name" input field
-#    And enter "Bruce Wayne" in the "Create room description" input field
-#    And tap on the "Add members" button
-#    Then the "Invite members" screen is opened
-#    And enter "androidQA2" in the "search user name" input field
-#    And tap on the "androidQA2" "username"
-#    And tap on the "Apply select users" button
-#    And tap on the "Apply create room" button
-#    Then the "Batman" room is opened
-#    When tap on the "Batman" name in the toolbar
-#    Then the "Room settings" screen is opened
-#    When tap on the "reassign new owner" link
-#    Then the "Room members" screen is opened
-#    When tap on the More option button
-#    When tap on the "Reassign owner’s rights" link
-#    Then the "androidQA2" user is presented between "Administration" section and "androidQA1" user
-#    Then the "(owner)" role is presented between "androidQA2" username and "null null" user full name
-
   Scenario: 5.024 Check transition by click on the name of the private room.
     Given login using the properties file
     Then the user is logged in
@@ -426,8 +378,6 @@ Feature: Toolbar
     When tap on the "Storm" name in the toolbar
     Then the "Room settings" screen is opened
     When tap on the "Leave room" link
-#    Then "You left private room #Storm" alert is displayed
-#    When tap on the "Ok button" button
     And wait while results are refreshed
     Then the "General" room is opened
 
@@ -476,24 +426,6 @@ Feature: Toolbar
     When change room name to "ТестКомната" in the field "Edit room name"
     And tap on the "Apply edit" button
     Then "Name should start from latin symbol or digit" alert is displayed
-
-#    Создать новую тестовую комнату для проверки
-#  Scenario: 5.034 Check the room name validation with only the digits in the "Edit Room" screen.
-#    Given login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When tap on the "Logo" button
-#    Then Left Drawer is opened
-#    Then the "GhostRider" room is presented in the left drawer
-#    And tap on the "GhostRider" room
-#    Then the "GhostRider" room is opened
-#    When tap on the "GhostRider" name in the toolbar
-#    Then the "Room settings" screen is opened
-#    When tap on the "Edit room" link
-#    Then the "Edit room" screen is opened
-#    When change room name to "123456789" in the field "Edit room name"
-#    And tap on the "Apply edit" button
-#    Then "Name should begin and contains only latin character" alert is displayed
 
   Scenario: 5.035 Check the room name validation with the empty field in the "Edit Room" screen.
     Given login using the properties file
@@ -697,38 +629,6 @@ Feature: Toolbar
     And wait while results are refreshed
     Then the "General" room is opened
 
-#    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-#  Scenario: 5.044 Check the "reassign new owner" function.
-#    Given login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When tap on the "Logo" button
-#    Then Left Drawer is opened
-#    When tap on the "Rooms" title
-#    Then the "Browse rooms" screen is opened
-#    Then the "All" tab is selected
-#    And tap on the "Create room" button
-#    Then the "Create room" screen is opened
-#    And tap on the "Private room" title
-#    And enter "GreenGoblin" in the "Create room name" input field
-#    And enter "Norman Osborn" in the "Create room description" input field
-#    And tap on the "Add members" button
-#    Then the "Invite members" screen is opened
-#    And enter "androidQA2" in the "search user name" input field
-#    And tap on the "androidQA2" "username"
-#    And tap on the "Apply select users" button
-#    Then the "Create room" screen is opened
-#    And tap on the "Apply create room" button
-#    Then the "GreenGoblin" room is opened
-#    When tap on the "GreenGoblin" name in the toolbar
-#    Then the "Room settings" screen is opened
-#    When tap on the "reassign new owner" link
-#    Then the "Room members" screen is opened
-#    When tap on the More option button
-#    When tap on the "Reassign owner’s rights" link
-#    Then the "androidQA2" user is presented between "Administration" section and "androidQA1" user
-#    Then the "(owner)" role is presented between "androidQA2" username and "null null" user full name
-
   Scenario: 5.045 Check transition by click on the name of the direct room.
     Given login using the properties file
     Then the user is logged in
@@ -829,37 +729,3 @@ Feature: Toolbar
     Then the "General" room is opened
     When swipe from left to right
     Then the "testuser2" room is deleted from left drawer
-
-#    Добавить степы и  экспектед
-#  Scenario: 5.053 Check the "Mark all as read" function by a tap on the "Aimchat" favicon on the toolbar.
-#    Given the "Sign in to your Team" screen is opened
-#    When enter "chat-demo" in the "Your team url" input field
-#    When tap on the "CONTINUE" button
-#    Then the "Sign in to Aimprosoft" screen is opened
-#    When enter "androidQA2" in the "Login" input field
-#    When enter "qwerty123" in the "Password" input field
-#    And hide the keyboard
-#    And tap on the "SIGN IN" button
-#    Then the "General" room is opened
-#    When tap on the "Logo" button
-#    Then Left Drawer is opened
-#    Then the "androidQA1" room is presented in the left drawer
-#    And tap on the "androidQA1" room in the left drawer
-#    Then the "androidQA1" direct room is opened
-#    When enter "test message 15" in the "Write a message" input field
-#    When tap on the "Send" button
-#    And hide the keyboard
-#    Then the message "test message 15" sent
-#    When tap on the "Logo" button
-#    Then Left Drawer is opened
-#    When tap on the "Aimprosoft" link
-#    Then pop-up menu is opened in the Left drawer
-#    When tap on the "Sign out" link
-#    Then the "Sign in to Aimprosoft" screen is opened
-#    When tap on the "Back" button
-#    Then the "Sign in to your Team" screen is opened
-#    When login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When long tap on the "Logo"
-#    And tap on the "Mark all as read" link

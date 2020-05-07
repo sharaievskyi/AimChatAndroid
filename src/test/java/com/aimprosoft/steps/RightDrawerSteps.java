@@ -13,7 +13,6 @@ public class RightDrawerSteps {
     @Then("the pinned message {string} is open in chat history")
     public void thePinnedMessageIsOpenInChatHistory(String messageText) {
         steps.verifyThatTheMessageIsOpenInChatHistory(messageText);
-//        steps.verifyThatThePinnedMessageIsOpenInChatHistory(messageText);
     }
 
     @Then("the starred message {string} is open in chat history")

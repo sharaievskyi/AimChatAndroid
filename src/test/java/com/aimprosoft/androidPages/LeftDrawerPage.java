@@ -47,7 +47,6 @@ public class LeftDrawerPage extends MobilePageObject {
 
     public boolean theTabIsSelected(String tabName) {
         return androidElementByText(tabName).isSelected();
-//        return androidElementByText(tabName).getAttribute("selected").equals("true");
     }
 
     public void tapOnTheSearchSign() {
@@ -55,24 +54,10 @@ public class LeftDrawerPage extends MobilePageObject {
     }
 
     public boolean verifyTheListThatContainsItemWithText(String word) {
-//        List<WebElementFacade> rooms = findAll(By.id(AndroidLocators.ROOM_NAME_ID));
-//        for (WebElementFacade room : rooms) {
-//            if (!StringUtils.containsIgnoreCase(room.getText(), word)) {
-//                return false;
-//            }
-//        }
-//        return true;
         return androidElementByTextAndId(word, AndroidLocators.ROOM_NAME).isDisplayed();
     }
 
     public boolean theRoomDoesNotAppearInTheSearchResult(String word) {
-//        List<WebElementFacade> rooms = findAll(By.id(AndroidLocators.BROWSE_ROOMS_LIST_ID));
-//        for (WebElementFacade room : rooms) {
-//            if (!StringUtils.containsIgnoreCase(room.getText(), word)) {
-//                return true;
-//            }
-//        }
-//        return false;
         return $(AndroidLocators.BROWSE_ROOMS_LIST_XPATH.replace("$1", word)).isCurrentlyVisible();
     }
 
@@ -81,13 +66,6 @@ public class LeftDrawerPage extends MobilePageObject {
     }
 
     public boolean verifyThatTheLeftDrawerDoesNotContainsElement(String word) {
-//        List<WebElementFacade> rooms = findAll(By.id(AndroidLocators.ROOM_NAME_ID));
-//        for (WebElementFacade room : rooms) {
-//            if (!StringUtils.containsIgnoreCase(room.getText(), word)) {
-//                return false;
-//            }
-//        }
-//        return true;
         return $(AndroidLocators.ROOM_NAME_LEFT_DRAWER_XPATH.replace("$1", word)).isCurrentlyVisible();
     }
 

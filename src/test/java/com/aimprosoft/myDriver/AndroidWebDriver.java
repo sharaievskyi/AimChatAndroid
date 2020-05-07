@@ -37,7 +37,6 @@ public class AndroidWebDriver implements DriverSource {
         File appDir = new File(classpathRoot, "src/test/resources/apps");
         File app = new File(appDir, properties.getProperty("apk.name"));
 
-
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, properties.getProperty("appium.version"));
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, properties.getProperty("android.platform.name"));

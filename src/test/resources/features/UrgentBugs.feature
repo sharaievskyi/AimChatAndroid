@@ -172,27 +172,6 @@ Feature: Urgent bugs
     When tap on the "three dots" button
     Then the "General" room is opened
 
-#  Scenario: 11.014 The sent message is displayed not at the bottom of the chat history when the user opens the beginning of the history through the pinned/starred/uploaded right drawer and sends a message. (Bug ID 84690)
-#    When login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When enter "test message 13" in the "Write a message" input field
-#    When tap on the "Send" button
-#    Then the message "test message 13" is visible
-#    When swipe from right to left
-#    Then the "Room info" screen is opened
-#    When tap on the "Pinned messages" link in the Right drawer
-#    Then the "Pinned messages" screen is opened
-#    Then the "All" tab is selected
-#    Then message "qwertyZomboid19#$ZOId_12 - это плохой пароль?" is present
-#    When tap on the "qwertyZomboid19#$ZOId_12 - это плохой пароль?" pinned message
-#    And wait while results are refreshed
-#    Then the pinned message "qwertyZomboid19#$ZOId_12 - это плохой пароль?" is open in chat history
-#    When enter "test message 14" in the "Write a message" input field
-#    When tap on the "Send" button
-#    Then the message "test message 14" is visible
-#    Then the message "test message 13" is visible
-    
   Scenario: 11.015 App crashes when the User searches for Direct in the Left panel. (Bug ID 83511)
     When login using the properties file
     Then the user is logged in
@@ -255,57 +234,6 @@ Feature: Urgent bugs
     Then the "Smile view" panel is present
     When select "😌" "emoji_icon" reaction
     Then reaction "😌" is added
-
-#  Scenario: 11.019 The app crashes when the user leaves or deletes room from the "Room settings" screen. (Bug ID 74848)
-#    Given the "Sign in to your Team" screen is opened
-#    When enter "chat-demo" in the "Your team url" input field
-#    When tap on the "CONTINUE" button
-#    Then the "Sign in to Aimprosoft" screen is opened
-#    When enter "testuser2@email.com" in the "Login" input field
-#    When enter "qwerty1" in the "Password" input field
-#    And tap on the "SIGN IN" button
-#    Then the "General" room is opened
-#    When tap on the "Logo" button
-#    Then Left Drawer is opened
-#    When tap on the "Rooms" title
-#    Then the "Browse rooms" screen is opened
-#    Then the "All" tab is selected
-#    And tap on the "Create room" button
-#    Then the "Create room" screen is opened
-#    And enter "Blade" in the "Create room name" input field
-#    And enter "Eric Brooks" in the "Create room description" input field
-#    And tap on the "Add members" button
-#    Then the "Invite members" screen is opened
-#    And enter "d.sharaievskyi" in the "search user name" input field
-#    And tap on the "d.sharaievskyi" "username"
-#    And tap on the "Apply select users" button
-#    And tap on the "Apply create room" button
-#    Then the "Blade" room is opened
-#    When swipe from left to right
-#    Then Left Drawer is opened
-#    When tap on the "Aimprosoft" link
-#    Then pop-up menu is opened in the Left drawer
-#    When tap on the "Sign out" link
-#    Then the "Sign in to Aimprosoft" screen is opened
-#    When tap on the "Back" button
-#    Then the "Sign in to your Team" screen is opened
-#    When login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When swipe from left to right
-#    Then Left Drawer is opened
-#    Then the "Blade" room is presented in the left drawer
-#    And tap on the "Blade" room
-#    Then the "Blade" room is opened
-#    When swipe from right to left
-#    Then the "Room info" screen is opened
-#    When tap on the "Room settings" link in the Right drawer
-#    Then the "Room settings" screen is opened
-#    When tap on the "Leave room" link
-#    And wait while results are refreshed
-#    Then "You left public room #Blade" alert is displayed
-#    When tap on the "Ok" link
-#    Then the "General" room is opened
 
   Scenario: 11.020 The app crashes if delete message of the previous day after deleting message of the current day. (Bug ID 73110)
     When login using the properties file

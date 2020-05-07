@@ -2,7 +2,6 @@ package com.aimprosoft.androidPages;
 
 import com.aimprosoft.locators.AndroidButtonsLocators;
 import com.aimprosoft.locators.AndroidFieldLocators;
-import com.aimprosoft.locators.AndroidLinksLocators;
 import com.aimprosoft.locators.AndroidLocators;
 import com.aimprosoft.myDriver.appium.core.MobilePageObject;
 import com.aimprosoft.utils.LoginSecureUtils;
@@ -32,18 +31,12 @@ public class AuthorizationPage extends MobilePageObject {
                 .waitFor(ExpectedConditions.presenceOfElementLocated(By.id(AndroidFieldLocators.LOGIN)));
         $$(AndroidFieldLocators.LOGIN).sendKeys(loginSecureUtils.getLogin());
         $$(AndroidFieldLocators.PASSWORD).sendKeys(loginSecureUtils.getPassword());
-//        getDriver().navigate().back();
         $$(AndroidButtonsLocators.SIGN_IN).click();
-//        withTimeoutOf(120, TimeUnit.SECONDS)
-//                .waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(AndroidButtonsLocators.CANCEL_BTN_POP_UP_MENU)));
-//        $(AndroidButtonsLocators.CANCEL_BTN_POP_UP_MENU).click();
         withTimeoutOf(120, TimeUnit.SECONDS)
                 .waitFor(ExpectedConditions.presenceOfElementLocated(By.id(AndroidLocators.TOOLBAR_ID)));
     }
 
     public boolean verifyThatTheUserIsLoggedIn() {
-//        withTimeoutOf(120, TimeUnit.SECONDS)
-//                .waitFor(ExpectedConditions.presenceOfElementLocated(By.id(AndroidLocators.TOOLBAR_ID)));
         return $$(AndroidLocators.TOOLBAR_ID).isDisplayed();
     }
 }

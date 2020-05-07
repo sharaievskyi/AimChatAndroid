@@ -40,7 +40,6 @@ public class LeftDrawerSteps {
     @Then("the {string} room appears in the left drawer search result")
     public void theRoomAppearsInTheLeftDrawerSearchResult(String roomName) {
         steps.theRoomIsPresentedInTheLeftDrawerSearchResult(roomName);
-//        steps.theListContainsWordInEachItemIsPresented(word);
     }
 
     @Then("the {string} room is deleted from left drawer")

@@ -39,10 +39,6 @@ public class CommonElementsPage extends MobilePageObject {
         return androidElementByTextAndId(text, getAndroidLocator(id)).isDisplayed();
     }
 
-//    public boolean verifyThatTheErrorMessageIsPresented(String errorMessage) {
-//        return androidElementByTextAndId(errorMessage, AndroidLocators.TEXT_INPUT_ERROR).isDisplayed();
-//    }
-
     public boolean verifyThatTheWarningIsDisplayed (String warningMessage) {
         withTimeoutOf(25, TimeUnit.SECONDS)
                 .waitFor(ExpectedConditions.presenceOfElementLocated(By.className("android.widget.TextView")));
@@ -150,7 +146,6 @@ public class CommonElementsPage extends MobilePageObject {
     }
 
     public boolean messageIsSharedToTheRoom(String messageText) {
-//        return $$(AndroidLocators.SHARE_MESSAGE).isDisplayed() && androidElementByText(messageText).isDisplayed();
         scrollDown();
         return $(AndroidLocators.SHARE_MESSAGE_CONTAINER_XPATH).isVisible() && $(AndroidLocators.SHARE_MESSAGE_TEXT_XPATH.replace("$1", messageText)).isVisible();
     }

@@ -34,8 +34,7 @@ public class AppiumDriverService {
     public AppiumServiceBuilder getBuilder() {
         return new AppiumServiceBuilder().
                 withArgument(GeneralServerFlag.LOG_LEVEL, "info").
-                usingPort(5000).
-//                usingAnyFreePort().
+                usingAnyFreePort().
                 withIPAddress("127.0.0.1");
     }
 }

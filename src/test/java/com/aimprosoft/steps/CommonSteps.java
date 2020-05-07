@@ -103,7 +103,6 @@ public class CommonSteps {
 
     @Then("the {string} details screen is opened")
     public void theDetailsScreenIsOpened(String screenName) {
-//        steps.verifyThatTheWidgetWithTheTextIsPresented(widgetText);
         steps.verifyThatTheDetailsScreenIsOpened(screenName);
     }
 
@@ -119,7 +118,6 @@ public class CommonSteps {
 
     @Then("message {string} is shared to the room")
     public void messageIsSharedToTheRoom(String messageText) {
-//        steps.verifyThatTheWidgetWithTheTextIsPresented(messageText);
         steps.messageIsSharedToTheRoom(messageText);
     }
 

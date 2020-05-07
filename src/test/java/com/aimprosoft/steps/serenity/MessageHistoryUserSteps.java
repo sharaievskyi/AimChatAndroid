@@ -1,7 +1,6 @@
 package com.aimprosoft.steps.serenity;
 
 import com.aimprosoft.androidPages.MessageHistoryPage;
-import com.aimprosoft.locators.AndroidLocators;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.junit.Assert;

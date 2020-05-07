@@ -20,14 +20,12 @@ public interface AndroidFieldLocators {
     String SEARCH_ROOMS = "search_searchEditText";
 
     String WRITE_A_MESSAGE= "message_bar_input";
-//    String SELECT_USERS = "username_search";
     String ADD_A_MESSAGE = "msg_text";
     String ROOM_NAME_SEARCH = "room_name_search";
     String MESSAGE_BAR_INPUT = "message_bar_input";
 
     // Start direct screen
     String SELECT_USERS = "search_searchEditText";
-
     String SEARCH_USER_NAME = "username_search";
 
     // Right Drawer

@@ -95,10 +95,6 @@ public class RightDrawerPage extends MobilePageObject {
         return $(AndroidLocators.USER_NAME_XPATH.replace("$1", userName)).isDisplayed();
     }
 
-    public boolean verifyThatThePinnedMessageIsOpenInChatHistory(String messageText) {
-        return $(AndroidLocators.MESSAGE_CONTENT_TEXT).getText().contains(messageText);
-    }
-
     public boolean messageMarkedAs(String messageText, String element) {
         int yElement = androidElementByTextAndId(element, AndroidLocators.PINNED_STARRED_ID).getLocation().getY();
         int yMessage = androidElementByTextAndId(messageText, AndroidLocators.MESSAGE_CONTENT_TEXT).getLocation().getY();

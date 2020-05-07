@@ -484,47 +484,6 @@ Feature: Right drawer
     Then the pinned message "qwerty88" is open in chat history
     Then message "qwerty88" marked as "pinned"
 
-
-#  Scenario: 4.030 Check transition to pinned message in chat history for public room by click on the message in "Files" tab.
-#    When swipe from right to left
-#    When tap on the "Pinned messages" list
-#    Then the "Pinned messages" screen is opened
-#    Then the "All" tab is selected
-#    When tap on the "Files" tab
-#    Then the "Files" tab is selected
-#    When tap on the "" pinned message
-#    And wait while results are refreshed
-#    Then the pinned message "" is open in chat history
-
-#  Scenario: 4.031 Check transition to pinned message in chat history for private room by click on the message in "Files" tab.
-#    When swipe from left to right
-#    And tap on the "SharePrivateRoom" room
-#    Then the "SharePrivateRoom" room is opened
-#    When swipe from right to left
-#    When tap on the "Pinned messages" list
-#    Then the "Pinned messages" screen is opened
-#    Then the "All" tab is selected
-#    When tap on the "Files" tab
-#    Then the "Files" tab is selected
-#    When tap on the "" pinned message
-#    And wait while results are refreshed
-#    Then the pinned message "" is open in chat history
-
-#  Scenario: 4.032 Check transition to pinned message in chat history for direct room by click on the message in "Files" tab.
-#    When swipe from left to right
-#    And tap on the "testuser1" room
-#    Then the "testuser1" direct room is opened
-#    When swipe from right to left
-#    When tap on the "Pinned messages" list
-#    Then the "Pinned messages" screen is opened
-#    Then the "All" tab is selected
-#    When tap on the "Files" tab
-#    Then the "Files" tab is selected
-#    When tap on the "" pinned message
-#    And wait while results are refreshed
-#    Then the pinned message "" is open in chat history
-
-
   Scenario: 4.033 Check for clickable "Starred messages" list in the right panel.
     Given login using the properties file
     Then the user is logged in
@@ -717,48 +676,6 @@ Feature: Right drawer
     And wait while results are refreshed
     Then the pinned message "qwerty94" is open in chat history
     Then message "qwerty94" marked as "starred"
-#    **********************************************************************************************************
-
-
-
-#  Scenario: 4.040 Check transition to starred message in chat history for public room by click on the file in the "Files" tab.
-#    When swipe from right to left
-#    When tap on the "Starred messages" list
-#    Then the "Starred messages" screen is opened
-#    Then the "All" tab is selected
-#    When tap on the "Files" tab
-#    Then the "Files" tab is selected
-#    When tap on the "" pinned message
-#    And wait while results are refreshed
-#    Then the pinned message "" is open in chat history
-
-#  Scenario: 4.041 Check transition to starred message in chat history for private room by click on the message in "Files" tab.
-#    When swipe from left to right
-#    And tap on the "SharePrivateRoom" room
-#    Then the "SharePrivateRoom" room is opened
-#    When swipe from right to left
-#    When tap on the "Starred messages" list
-#    Then the "Starred messages" screen is opened
-#    Then the "All" tab is selected
-#    When tap on the "Files" tab
-#    Then the "Files" tab is selected
-#    When tap on the "" pinned message
-#    And wait while results are refreshed
-#    Then the pinned message "" is open in chat history
-
-#  Scenario: 4.042 Check transition to pinned message in chat history for direct room by click on the message in "Files" tab.
-#    When swipe from left to right
-#    And tap on the "testuser1" room
-#    Then the "testuser1" direct room is opened
-#    When swipe from right to left
-#    When tap on the "Starred messages" list
-#    Then the "Starred messages" screen is opened
-#    Then the "All" tab is selected
-#    When tap on the "Files" tab
-#    Then the "Files" tab is selected
-#    When tap on the "" pinned message
-#    And wait while results are refreshed
-#    Then the pinned message "" is open in chat history
 
   Scenario: 4.043 Check for clickable "Back" button in the "Starred messages" list.
     Given login using the properties file
@@ -780,78 +697,6 @@ Feature: Right drawer
     Then the "Room info" screen is opened
     When tap on the "Uploaded files" link in the Right drawer
     Then the "Uploaded files" screen is opened
-
-#  Scenario: 4.045 Check transition to uploaded files in chat history for public room by click on the files in the "By all members" tab.
-#    When swipe from right to left
-#    When tap on the "Uploaded files" list
-#    Then the "Uploaded files" screen is opened
-#    Then the "By all members" tab is selected
-#    When tap on the "" uploaded file
-#    And wait while results are refreshed
-#    Then the uploaded file "" is open in chat history
-
-#  Scenario: 4.046 Check transition to uploaded files in chat history for private room by click on the files in the "By all members" tab.
-#    When swipe from left to right
-#    And tap on the "SharePrivateRoom" room
-#    Then the "SharePrivateRoom" room is opened
-#    When swipe from right to left
-#    When tap on the "Uploaded files" list
-#    Then the "Uploaded files" screen is opened
-#    Then the "By all members" tab is selected
-#    When tap on the "" uploaded file
-#    And wait while results are refreshed
-#    Then the uploaded file "" is open in chat history
-
-#  Scenario: 4.047 Check transition to uploaded files in chat history for direct room by click on the files in the "By all members" tab.
-#    When swipe from left to right
-#    And tap on the "testuser1" room
-#    Then the "testuser1" direct room is opened
-#    When swipe from right to left
-#    When tap on the "Uploaded files" list
-#    Then the "Uploaded files" screen is opened
-#    Then the "By all members" tab is selected
-#    When tap on the "" uploaded file
-#    And wait while results are refreshed
-#    Then the uploaded file "" is open in chat history
-
-#  Scenario: 4.048 Check transition to uploaded files in chat history for public room by click on the files in the "By me" tab.
-#    When swipe from right to left
-#    When tap on the "Uploaded files" list
-#    Then the "Uploaded files" screen is opened
-#    Then the "By all members" tab is selected
-#    When tap on the "By me" tab
-#    Then the "By me" tab is selected
-#    When tap on the "" uploaded file
-#    And wait while results are refreshed
-#    Then the uploaded file "" is open in chat history
-
-#  Scenario: 4.049 Check transition to uploaded files in chat history for private room by click on the files in the "By me" tab.
-#    When swipe from left to right
-#    And tap on the "SharePrivateRoom" room
-#    Then the "SharePrivateRoom" room is opened
-#    When swipe from right to left
-#    When tap on the "Uploaded files" list
-#    Then the "Uploaded files" screen is opened
-#    Then the "By all members" tab is selected
-#    When tap on the "By me" tab
-#    Then the "By me" tab is selected
-#    When tap on the "" uploaded file
-#    And wait while results are refreshed
-#    Then the uploaded file "" is open in chat history
-
-#  Scenario: 4.050 Check transition to uploaded files in chat history for direct room by click on the files in the "By me" tab.
-#    When swipe from left to right
-#    And tap on the "testuser1" room
-#    Then the "testuser1" direct room is opened
-#    When swipe from right to left
-#    When tap on the "Uploaded files" list
-#    Then the "Uploaded files" screen is opened
-#    Then the "By all members" tab is selected
-#    When tap on the "By me" tab
-#    Then the "By me" tab is selected
-#    When tap on the "" uploaded file
-#    And wait while results are refreshed
-#    Then the uploaded file "" is open in chat history
 
   Scenario: 4.051 Check for clickable "Back" button in the "Uploaded files" list.
     Given login using the properties file
@@ -1124,8 +969,6 @@ Feature: Right drawer
     When tap on the "Room settings" link in the Right drawer
     Then the "Room settings" screen is opened
     When tap on the "Leave room" link
-#    And wait while results are refreshed
-#    When tap on the "Ok" link
     And wait while results are refreshed
     Then the "General" room is opened
     When tap on the "Logo" button
@@ -1623,50 +1466,3 @@ Feature: Right drawer
     When tap on the "Ok button" button
     And wait while results are refreshed
     Then the "General" room is opened
-
-# &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-#  Scenario: 4.102 Check the "reassign new owner" function for the public room.
-#    Given login using the properties file
-#    Then the user is logged in
-#    Then the "General" room is opened
-#    When tap on the "Logo" button
-#    Then Left Drawer is opened
-#    Then the "IronMan" room is presented in the left drawer
-#    And tap on the "IronMan" room in the left drawer
-#    Then the "IronMan" room is opened
-#    When tap on the "three dots" button
-#    Then the "Room info" screen is opened
-#    When tap on the "Room settings" link in the Right drawer
-#    Then the "Room settings" screen is opened
-#    And wait while results are refreshed
-#    When tap on the "reassign new owner" link
-#    Then the "Room members" screen is opened
-#    When tap on the More option button
-#    When tap on the "Reassign owner’s rights" link
-#    And tap on the Back button
-#    When tap on the "Leave room" link
-#    Then "You left public room #IronMan" alert is displayed
-#    When tap on the "Ok button" button
-#    And wait while results are refreshed
-#    Then the "General" room is opened
-#
-##  ********** Прекондишен ************************
-#  Scenario: 4.103 Check the "reassign new owner" function for the private room.
-#    Given the "General" room is opened
-#    When swipe from left to right
-#    And tap on the "MyPrivateRoom" room
-#    Then the "MyPrivateRoom" room is opened
-#    When swipe from right to left
-#    Then the "Room info" screen is opened
-#    When tap on the "Room settings" link in the Right drawer
-#    Then the "Room settings" screen is opened
-#    When tap on the "reassign new owner" link
-#    Then the "Room members" screen is opened
-#    When tap on the More option button
-#    When tap on the "Reassign owner’s rights" link
-#    And tap on the Back button
-#    When tap on the "Leave room" link
-#    Then "You left public room #MyPrivateRoom" alert is displayed
-#    When tap on the "Ok button" button
-#    And wait while results are refreshed
-#    Then the "General" room is opened

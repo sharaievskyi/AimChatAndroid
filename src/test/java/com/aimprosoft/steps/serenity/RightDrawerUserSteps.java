@@ -69,9 +69,6 @@ public class RightDrawerUserSteps extends ScenarioSteps {
         Assert.assertTrue("User name is not displayed in the Search result", rightDrawerPage.theRoomAppearsInTheRoomMembersSearchResult(userName));
     }
 
-    public void verifyThatThePinnedMessageIsOpenInChatHistory(String messageText) {
-        Assert.assertTrue("",rightDrawerPage.verifyThatThePinnedMessageIsOpenInChatHistory(messageText));
-    }
     @Step
     public void verifyThatTheMessageMarkedAsPinnedOrStarred(String messageText, String element) {
         Assert.assertTrue("The message is not marked as " + element, rightDrawerPage.messageMarkedAs(messageText, element));
